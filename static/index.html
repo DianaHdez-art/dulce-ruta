@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dulce Ruta · aprende postres</title>
+
+  <!-- Tipografías de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+
+  <!-- Estilos (colores, tamaños, diseño) -->
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+  <!-- 1) Pantalla de entrada: se llena desde acceso.js -->
+  <div id="auth" class="hidden"></div>
+
+  <!-- 2) La aplicación: menú lateral + zona de contenido -->
+  <div id="app" class="hidden">
+    <nav id="nav">
+      <div class="brand">🧁 Dulce Ruta</div>
+      <!-- data-v es el nombre de la sección; main.js lo usa para saber qué dibujar -->
+      <button data-v="ruta">🗺️ <span>Mi ruta</span></button>
+      <button data-v="perfil">👤 <span>Tu perfil</span></button>
+      <button data-v="cocina">📸 <span>Tu cocina</span></button>
+      <button data-v="favoritos">❤️ <span>Favoritos</span></button>
+      <button data-v="recetas">🍰 <span>Más recetas</span></button>
+      <button data-v="mas">➕ <span>Más</span></button>
+    </nav>
+    <!-- Aquí se dibuja cada sección -->
+    <main id="main"></main>
+  </div>
+
+  <!-- 3) Ventana emergente y avisos: se llenan desde utilidades.js -->
+  <div id="modal" class="hidden"></div>
+  <div id="toast" class="hidden"></div>
+
+  <!-- Programas de la página. El ORDEN importa: main.js va al final. -->
+  <script src="/static/utilidades.js"></script>
+  <script src="/static/acceso.js"></script>
+  <script src="/static/ruta.js"></script>
+  <script src="/static/recetas.js"></script>
+  <script src="/static/secciones.js"></script>
+  <script src="/static/main.js"></script>
+</body>
+</html>
