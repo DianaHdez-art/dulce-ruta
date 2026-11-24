@@ -101,8 +101,7 @@ Si el tiempo o el nivel dejan menos de tres recetas, esos filtros se relajan. Lo
 - La ruta usa reglas fijas: no aprende del desempeño de la persona.
 - Con pocos utensilios y varias alergias la ruta puede quedar muy corta; falta ampliar el catálogo de recetas.
 
-## Autores
+## Autor
+Diana Lucia Hernandez fraire 2226678
 
-[Nombre del equipo e integrantes]
-
-Proyecto académico.
+Proyecto Integrador de Aprendizaje de la materia Sistemas Adaptativos 
